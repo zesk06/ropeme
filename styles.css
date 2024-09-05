@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    overflow-y: auto; /* Enable vertical scrolling for the whole page */
+
+}
+
+.container {
+    width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#controls {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Add a maximum height and make the table scrollable */
+#interval-table {
+    max-height: 200px; /* You can adjust this value */
+    overflow-y: auto;
+    margin-bottom: 20px; /* Add some space at the bottom */
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+#countdown {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+#current-exercise-info {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+#next-exercise-info {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+

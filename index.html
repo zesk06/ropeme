@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jump Rope Training Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Session parameters input -->
+        <section id="session-parameters">
+            <h1>Jump Rope Training Timer</h1>
+            <label for="session-time">Session Duration (minutes):</label>
+        <input type="number" id="session-time" placeholder="Enter session time in minutes" value="15">
+            <button id="compute-session">Compute Session</button>
+        </section>
+
+        <!-- Computed Interval Exercises -->
+        <section id="interval-table">
+            <h2>Interval Exercises</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Interval</th>
+                        <th>Exercise</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody id="intervals-body">
+                    <!-- Populated with JS -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Button Bar for Start/Pause/Resume -->
+        <section id="controls">
+            <button id="start">Start</button>
+            <button id="pause" disabled>Pause</button>
+            <button id="resume" disabled>Resume</button>
+        </section>
+
+        <!-- Countdown Timer -->
+        <section id="countdown">
+            <h3>Time Remaining: <span id="remaining-time">00</span></h3>
+        </section>
+
+        <!-- Current and Next Exercise -->
+        <section id="current-exercise-info">
+            <h3>Current: <span id="current-exercise">-</span></h3>
+            <h3><span id="progress">-</span></h3>
+
+        </section>
+        <section id="next-exercise-info">
+            <h3>Next: <span id="next-exercise">-</span></h3>
+        </section>
+
+        <!-- Footer for YouTube Music Playlist -->
+        <footer>
+            <h4>Music Playlist</h4>
+            <iframe width="300" height="380" src="https://www.youtube.com/embed/Mdj711U31yU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
